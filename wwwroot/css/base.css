@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 2fr auto;
+      grid-template-rows: auto 2fr auto;
+}
+
+.container__header,
+.container__footer {
+  height: 100px;
+  background: #5e4c5a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 0 30px;
+}
+
+.container__header-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__header-links ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.skills-section {
+  border: 1px solid red;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Langar', cursive;
+  font-size: 2rem;
+}
+
+.skills-section li:nth-child(1) {
+  font-size: 3rem;
+}
+
+.skills-section .skills-section--button {
+  background: #5e4c5a;
+  color: white;
+  padding: 5px 30px;
+}
+
+.skills-section li {
+  list-style: none;
+}
+
+.section__intro {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__intro .section__intro-content--image {
+  width: 70%;
+}
+
+.section__intro .section__intro-content {
+  width: 50%;
+}
+
+.section__intro .section__intro-content:nth-child(1) {
+  font-family: 'Langar', cursive;
+}
+
+.section__intro .section__intro-content p {
+  margin-bottom: 60px;
+}
+
+.section__intro .section__intro-content h1 {
+  margin-bottom: 20px;
+}
+
+.section__intro .section__intro--button {
+  background: #5e4c5a;
+  color: white;
+  padding: 10px 60px;
+}
+
+.section__intro a {
+  text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .section__intro .section__intro-content {
+    font-size: 1.5rem;
+  }
+}
+
+.projects {
+  height: 70vh;
+  width: 95%;
+  margin: 10px auto;
+}
+
+.project__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+  width: 100%;
+  grid-column-gap: 2%;
+      grid-template-areas: 'a b c';
+}
+
+.project__columns {
+  height: 420px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.project__columns:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+.project__columns:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+}
+
+.project__columns:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+.project__column--image {
+  height: 100%;
+}
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+$header-and-footer-color: #5e4c5a;
+$text-color: white;
+
+@import '_main.scss';
+@import '_skills.scss';
+@import '_section.scss';
+@import '_projects.scss';

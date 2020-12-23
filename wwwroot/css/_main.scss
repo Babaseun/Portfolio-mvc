@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 2fr auto;
+}
+
+.container__header,
+.container__footer {
+  height: 100px;
+  background: $header-and-footer-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $text-color;
+  padding: 0 30px;
+}
+.container__header-links ul {
+  display: flex;
+}
+.container__header-links ul li {
+  list-style: none;
+  margin-right: 20px;
+}

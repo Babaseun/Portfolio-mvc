@@ -1,0 +1,31 @@
+.projects {
+  height: 70vh;
+  width: 95%;
+  margin: 10px auto;
+}
+.project__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  grid-column-gap: 2%;
+  grid-template-areas: 'a b c';
+}
+.project__columns {
+  height: 420px;
+  width: 100%;
+  border: 1px solid red;
+}
+.project__columns:nth-child(1) {
+  grid-area: a;
+}
+.project__columns:nth-child(2) {
+  grid-area: b;
+}
+.project__columns:nth-child(3) {
+  grid-area: c;
+}
+.project__column--image {
+  height: 100%;
+}
